@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1.App__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.App__header{
+  padding: 4% 0 4%;
+  width: 50%;
+  border: 1px solid black;
+}
