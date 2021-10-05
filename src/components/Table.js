@@ -30,7 +30,7 @@ const TableBody = ({dataCh,onClick}) => {
     <tbody>
     {dataCh.map(value =>
         <tr>
-        <th key={value.id} scope="row">{value.id}</th>
+        <th key={value.id} scope="row">1</th>
         <td onClick={()=>onClick(value)} >{value.name}</td>
         <td>{value.job}</td>        
       </tr>

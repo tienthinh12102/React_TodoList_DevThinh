@@ -2,7 +2,7 @@
   "name": "ex-developer-thinh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tienthinh12102/React_TodoList_DevThinh",
+  "homepage": "https://tienthinh12102.github.io/React_TodoList_DevThinh",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
