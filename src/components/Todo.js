@@ -25,9 +25,11 @@ export const Todo = ({text,num,todo,todos,setTodos,img}) => {
         />
         </td>
       <td>
-      <button type="button" className="btn btn-primary">Share</button>
-      <button onClick={completedHandler} type="button" className="btn btn-success">Check</button>
-      <button onClick={deleteHandler} type="button" className="btn btn-danger">Delete</button>
+      <button type="button" className="btn btn-primary">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftienthinh12102.github.io%2FReact_TodoList_DevThinh%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a>
+      </button>
+      <button onClick={completedHandler} type="button" className="btn btn-success">Hoàn Thành</button>
+      <button onClick={deleteHandler} type="button" className="btn btn-danger">Xóa</button>
       </td>
       
     </tr>

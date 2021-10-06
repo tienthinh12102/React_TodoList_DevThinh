@@ -20,3 +20,7 @@ h1.App__title {
   width: 80%;
   border: 1px solid black;
 }
+a.fb-xfbml-parse-ignore {
+  color: white;
+  text-decoration: unset;
+}

@@ -59,7 +59,7 @@ export const Form = ({inputText,setInputText,setTodos,todos,inputNum,setInputNum
         onClick={SubmitTodoHandler}
         type="submit"
         className="btn btn-primary mt-3 mb-2"
-        value="Lưu Tasks"
+        value="Lưu Nhiệm vụ"
       ></input>
     </form>
   );
