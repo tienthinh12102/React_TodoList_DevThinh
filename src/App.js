@@ -33,8 +33,8 @@ function App() {
   return (
     <div className="App__header container">
       <div className="row justify-content-center">
-        <div className="col-md-6">
-          <h1 className="App__title">nhiệm vụ đi chợ</h1>
+        <div className="col-md-7">
+          <h1><a className="App__Header" href="#">Nhiệm Vụ Đi Chợ</a></h1>
           <Form  todos={todos} setTodos={setTodos} 
                   inputText={inputText} setInputText={setInputText}
                   inputNum={inputNum} setInputNum={setInputNum}

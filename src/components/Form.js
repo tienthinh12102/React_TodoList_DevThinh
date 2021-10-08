@@ -1,17 +1,29 @@
-import React from "react";
+import React,{useState} from "react";
 
 export const Form = ({inputText,setInputText,setTodos,todos,inputNum,setInputNum,inputImg,setInputImg}) => {
+  const [error, setError] = useState(null);
+
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
   const inputNumHandler = (e) => {   
-    setInputNum(e.target.value);
+    if((e.target.value) >= 0){
+      setInputNum(e.target.value);
+      setError(null)
+    }else{
+      setError(`*Có lỗi ! Hãy nhập số lớn hơn 0`)
+    }
+    
   };
   const inputImgHandler = (e) => {
     setInputImg(e.target.value);
   };
   const SubmitTodoHandler = (e) =>{
     e.preventDefault();
+    if ((inputImg && inputText && inputNum) === "") {
+      alert("Nhập thiếu thông tin ! Vui lòng kiểm tra lại");
+      return
+    }
     setTodos([
       ...todos, 
       {text: inputText,
@@ -22,7 +34,7 @@ export const Form = ({inputText,setInputText,setTodos,todos,inputNum,setInputNum
     ]);
     setInputText("");
     setInputNum("");
-    setInputImg("");
+    setInputImg("");   
   };
 
   return (
@@ -45,9 +57,13 @@ export const Form = ({inputText,setInputText,setTodos,todos,inputNum,setInputNum
           id="number"
           min="0"
           onChange={inputNumHandler}
+
           className="form-control" 
           placeholder="Số Lượng"
-        ></input>
+        >
+          
+        </input>
+        {error ? <span >{error}</span> : ""}
       </div>
       <div className="form-group mt-2">
         <label>Hình Ảnh</label>

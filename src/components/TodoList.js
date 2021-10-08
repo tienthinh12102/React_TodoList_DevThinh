@@ -8,7 +8,7 @@ export const TodoList = ({ todos, setTodos }) => {
         <thead className="thead-dark">
           <tr>
             <th scope="col">Ghi Chú</th>
-            <th scope="col">Số Lượng (kg)</th>
+            <th scope="col">Số Lượng (Kg)</th>
             <th scope="col">Hình Ảnh</th>
             <th scope="col">Quản Lý</th>
           </tr>
@@ -22,7 +22,7 @@ export const TodoList = ({ todos, setTodos }) => {
               num={todo.num}
               img={todo.img}
               key={todo.id}
-              todo={todo}
+              todo={todo}             
             />
           ))}
         </tbody>
